@@ -1,0 +1,116 @@
+.container {
+  margin: 150px  150px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid silver;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+}
+.img {
+  width: 450px;
+  border-radius: 10px;
+}
+.boxInfo {
+  text-align: left;
+  margin-left: 30px;
+  padding: 20px;
+  border: 1px solid silver;
+  border-radius: 10px;
+}
+.title {
+  color: #1a73e8;
+  margin: 20px 0px 30px;
+}
+.description {
+  color: rgb(62, 62, 62);
+  margin-bottom: 30px;
+}
+.category {
+  font-weight: bold;
+  padding: 0 20px;
+  color: orange;
+  font-size: 1.1rem;
+}
+.category span {
+  color: rgb(62, 62, 62);
+  font-weight: 400;
+  margin-bottom: 50px;
+}
+.buttonContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.price {
+  display: inline-block;
+  border-radius: 5px;
+  padding: 7px 16px;
+  margin-bottom: 20px;
+  background-color: #34a853;
+  color: #fff;
+  font-weight: bold;
+  font-size: 0.9rem;
+  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px,
+    rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px,
+    rgba(0, 0, 0, 0.07) 0px 9px 16px;
+}
+.back {
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 5px;
+  padding: 7px 16px;
+  margin-bottom: 20px;
+  background-color: #1a73e8;
+  color: #fff;
+  font-weight: bold;
+  font-size: 0.9rem;
+  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px,
+    rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px,
+    rgba(0, 0, 0, 0.07) 0px 9px 16px;
+  transition: all 0.2s ease;
+}
+.back:hover {
+  background-color: #0b499b;
+}
+
+@media (max-width: 1200px) {
+  .container {
+    margin: 120px 80px 50px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .container {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .img {
+    width: 170px;
+    margin-bottom: 50px;
+  }
+  .boxInfo {
+    margin: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    margin: 120px 40px 50px;
+    justify-content: center;
+  }
+  .boxInfo {
+    margin: 0;
+  }
+}
+
+@media (max-width: 555px) {
+  .container {
+    margin: 120px 20px 50px;
+    justify-content: center;
+  }
+  .boxInfo {
+    margin: 0;
+  }
+}
